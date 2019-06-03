@@ -10,11 +10,31 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var menu: UIView!
+    @IBOutlet weak var menuButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        menu.layer.shadowOpacity = 1;
+        menu.layer.shadowRadius = 6;
     }
 
-
+    @IBAction func openMenu(_ sender: Any) {
+        if leadingConstraint.constant == -150{
+            menuButton.imageView?.image = UIImage(named:"closeMenu");
+            leadingConstraint.constant = 0;
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.layoutIfNeeded();
+            });
+        }else{
+            menuButton.imageView?.image = UIImage(named:"openMenu");
+            leadingConstraint.constant = -150;
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.layoutIfNeeded();
+            });
+        }
+    }
+    
 }
 
