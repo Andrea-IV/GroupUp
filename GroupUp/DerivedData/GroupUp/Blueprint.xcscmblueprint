@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C3ED5D609AA1FFAC45C5B656158F9F31DE01DD79",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C3ED5D609AA1FFAC45C5B656158F9F31DE01DD79" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D52719F2-5982-418A-91F4-FB6E39837185",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C3ED5D609AA1FFAC45C5B656158F9F31DE01DD79" : "GROUPUP\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GroupUp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GroupUp\/GroupUp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ItIsMagic\/GroupUp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3ED5D609AA1FFAC45C5B656158F9F31DE01DD79"
+    }
+  ]
+}
