@@ -35,19 +35,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="131.66666666666669" y="426.66666666666669" width="150.66666666666669" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="109.66666666666667" y="477.66666666666669" width="194.66666666666663" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-tm-DmV">
+                                <rect key="frame" x="8" y="44" width="406" height="769"/>
+                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-2e-46v">
                                 <rect key="frame" x="-150" y="44" width="150" height="769"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,12 +46,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceS-32-bac">
-                                <rect key="frame" x="0.0" y="753" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="753" width="44" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="1oX-fd-9za"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="1oX-fd-9za"/>
                                     <constraint firstAttribute="height" constant="40" id="Sfx-6O-jsZ"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="openMenu"/>
+                                <state key="normal" image="openMenu"/>
                                 <connections>
                                     <action selector="openMenu:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ik0-Pa-7Qc"/>
                                 </connections>
@@ -70,19 +60,20 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cdX-2e-46v" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="5qF-eE-MSQ"/>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstItem="cdX-2e-46v" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="-150" id="8yQ-34-hGR"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ceS-32-bac" secondAttribute="bottom" constant="20" id="DZz-LR-Ef8"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="HM1-uc-Qr1"/>
                             <constraint firstItem="cdX-2e-46v" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Lj8-w4-0El"/>
                             <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="NnP-gx-xxg"/>
                             <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="SUx-iM-cZq"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="pZE-qJ-ACB"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" constant="8" id="sgG-el-cO8"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="xTG-bc-u8p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="gQo-4m-unT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="LeadingConstraint" destination="8yQ-34-hGR" id="ZdI-5N-CNo"/>
                         <outlet property="menu" destination="cdX-2e-46v" id="lQI-v1-bvk"/>
