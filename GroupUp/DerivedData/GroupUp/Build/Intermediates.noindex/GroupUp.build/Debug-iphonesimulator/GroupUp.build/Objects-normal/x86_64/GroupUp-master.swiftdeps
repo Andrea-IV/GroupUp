@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "a98f0df0ac3a3b3e676e0defa7d8eacc"
-build_time: [1559639226, 347648000]
-inputs:
-  "/Users/etudiant/Desktop/PROJET 4AL2/GROUPUP/GroupUp/GroupUp/SecondViewController.swift": [1559549627, 0]
-  "/Users/etudiant/Desktop/PROJET 4AL2/GROUPUP/GroupUp/GroupUp/AppDelegate.swift": [1559549627, 0]
-  "/Users/etudiant/Desktop/PROJET 4AL2/GROUPUP/GroupUp/GroupUp/FirstViewController.swift": [1559639225, 0]
