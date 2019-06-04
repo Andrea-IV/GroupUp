@@ -196,17 +196,17 @@ SWIFT_CLASS("_TtC7GroupUp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSLayoutConstraint;
 @class UIView;
 @class UIButton;
+@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC7GroupUp19FirstViewController")
 @interface FirstViewController : UIViewController
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified leadingConstraint;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified menu;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified menuButton;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified leadingConstraint;
 - (void)viewDidLoad;
 - (IBAction)openMenu:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

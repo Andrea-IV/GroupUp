@@ -10,9 +10,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var menu: UIView!
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
