@@ -196,27 +196,35 @@ SWIFT_CLASS("_TtC7GroupUp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIView;
-@class UIButton;
-@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC7GroupUp19FirstViewController")
-@interface FirstViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified menu;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified menuButton;
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified leadingConstraint;
+SWIFT_CLASS("_TtC7GroupUp25InformationViewController")
+@interface InformationViewController : UIViewController
 - (void)viewDidLoad;
-- (IBAction)openMenu:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC7GroupUp20SecondViewController")
-@interface SecondViewController : UIViewController
+SWIFT_CLASS("_TtC7GroupUp21MapChatViewController")
+@interface MapChatViewController : UIViewController
 - (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISlider;
+@class UILabel;
+@class UITextField;
+
+SWIFT_CLASS("_TtC7GroupUp22SettingsViewController")
+@interface SettingsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified slider;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified distanceAlert;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lengthSharing;
+- (void)viewDidLoad;
+- (IBAction)sliderValueChanged:(UISlider * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

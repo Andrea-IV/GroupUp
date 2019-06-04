@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC13559222A67A36004638BA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13559122A67A36004638BA /* SettingsViewController.swift */; };
 		EC3E14EC22A50E3B00CBB45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14EB22A50E3B00CBB45B /* AppDelegate.swift */; };
-		EC3E14EE22A50E3B00CBB45B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14ED22A50E3B00CBB45B /* FirstViewController.swift */; };
-		EC3E14F022A50E3B00CBB45B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14EF22A50E3B00CBB45B /* SecondViewController.swift */; };
+		EC3E14EE22A50E3B00CBB45B /* MapChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14ED22A50E3B00CBB45B /* MapChatViewController.swift */; };
+		EC3E14F022A50E3B00CBB45B /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14EF22A50E3B00CBB45B /* InformationViewController.swift */; };
 		EC3E14F322A50E3B00CBB45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E14F122A50E3B00CBB45B /* Main.storyboard */; };
 		EC3E14F522A50E3E00CBB45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E14F422A50E3E00CBB45B /* Assets.xcassets */; };
 		EC3E14F822A50E3E00CBB45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E14F622A50E3E00CBB45B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC13559122A67A36004638BA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EC3E14E822A50E3B00CBB45B /* GroupUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E14EB22A50E3B00CBB45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC3E14ED22A50E3B00CBB45B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		EC3E14EF22A50E3B00CBB45B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EC3E14ED22A50E3B00CBB45B /* MapChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChatViewController.swift; sourceTree = "<group>"; };
+		EC3E14EF22A50E3B00CBB45B /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		EC3E14F222A50E3B00CBB45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC3E14F422A50E3E00CBB45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3E14F722A50E3E00CBB45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				EC3E14EB22A50E3B00CBB45B /* AppDelegate.swift */,
-				EC3E14ED22A50E3B00CBB45B /* FirstViewController.swift */,
-				EC3E14EF22A50E3B00CBB45B /* SecondViewController.swift */,
+				EC3E14ED22A50E3B00CBB45B /* MapChatViewController.swift */,
+				EC3E14EF22A50E3B00CBB45B /* InformationViewController.swift */,
+				EC13559122A67A36004638BA /* SettingsViewController.swift */,
 				EC3E14F122A50E3B00CBB45B /* Main.storyboard */,
 				EC3E14F422A50E3E00CBB45B /* Assets.xcassets */,
 				EC3E14F622A50E3E00CBB45B /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3E14F022A50E3B00CBB45B /* SecondViewController.swift in Sources */,
+				EC3E14F022A50E3B00CBB45B /* InformationViewController.swift in Sources */,
 				EC3E14EC22A50E3B00CBB45B /* AppDelegate.swift in Sources */,
-				EC3E14EE22A50E3B00CBB45B /* FirstViewController.swift in Sources */,
+				EC3E14EE22A50E3B00CBB45B /* MapChatViewController.swift in Sources */,
+				EC13559222A67A36004638BA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
