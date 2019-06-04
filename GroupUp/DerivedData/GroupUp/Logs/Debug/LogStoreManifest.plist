@@ -180,6 +180,35 @@
 			<key>uniqueIdentifier</key>
 			<string>6BE85F62-3DFE-490D-B86B-DB7F9C18BCBC</string>
 		</dict>
+		<key>6F78BD20-B75F-45E6-9E5B-568B9B3A4C00</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6F78BD20-B75F-45E6-9E5B-568B9B3A4C00.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>GroupUp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GroupUp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GroupUp</string>
+			<key>timeStartedRecording</key>
+			<real>581330506.24889898</real>
+			<key>timeStoppedRecording</key>
+			<real>581332025.74198306</real>
+			<key>title</key>
+			<string>Debug GroupUp</string>
+			<key>uniqueIdentifier</key>
+			<string>6F78BD20-B75F-45E6-9E5B-568B9B3A4C00</string>
+		</dict>
 		<key>A5DD1DF8-EEBE-4BB1-B413-7907FFAA435E</key>
 		<dict>
 			<key>className</key>

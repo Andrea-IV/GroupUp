@@ -38,50 +38,18 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-tm-DmV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-2e-46v">
-                                <rect key="frame" x="-150" y="44" width="150" height="769"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="On5-kb-E21"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceS-32-bac">
-                                <rect key="frame" x="0.0" y="753" width="44" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="1oX-fd-9za"/>
-                                    <constraint firstAttribute="height" constant="40" id="Sfx-6O-jsZ"/>
-                                </constraints>
-                                <state key="normal" image="openMenu"/>
-                                <connections>
-                                    <action selector="openMenu:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ik0-Pa-7Qc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="5qF-eE-MSQ"/>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="-150" id="8yQ-34-hGR"/>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="Cri-TC-tqs"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ceS-32-bac" secondAttribute="bottom" constant="20" id="DZz-LR-Ef8"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="HM1-uc-Qr1"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="HM9-t3-NpJ"/>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Lj8-w4-0El"/>
-                            <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="NnP-gx-xxg"/>
-                            <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="SUx-iM-cZq"/>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="pCf-xG-xab"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="pZE-qJ-ACB"/>
-                            <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="sgG-el-cO8"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="xTG-bc-u8p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="gQo-4m-unT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="LeadingConstraint" destination="8yQ-34-hGR" id="ZdI-5N-CNo"/>
-                        <outlet property="menu" destination="cdX-2e-46v" id="lQI-v1-bvk"/>
-                        <outlet property="menuButton" destination="ceS-32-bac" id="Po5-f6-IFF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,28 +62,7 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106.33333333333333" y="426.66666666666669" width="201.33333333333337" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="99.666666666666686" y="477.66666666666669" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Information" image="details" id="cPa-gy-q4n"/>
@@ -147,7 +94,6 @@
     <resources>
         <image name="details" width="18.75" height="18.75"/>
         <image name="map" width="18.75" height="18.75"/>
-        <image name="openMenu" width="18.75" height="18.75"/>
         <image name="settings" width="18.75" height="18.75"/>
     </resources>
 </document>
