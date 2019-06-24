@@ -6,6 +6,64 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>0BA36AB4-8BC7-4A9D-B042-27990D9D3AB6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0BA36AB4-8BC7-4A9D-B042-27990D9D3AB6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>GroupUp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GroupUp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build GroupUp</string>
+			<key>timeStartedRecording</key>
+			<real>583063842.49290597</real>
+			<key>timeStoppedRecording</key>
+			<real>583063855.603194</real>
+			<key>title</key>
+			<string>Build GroupUp</string>
+			<key>uniqueIdentifier</key>
+			<string>0BA36AB4-8BC7-4A9D-B042-27990D9D3AB6</string>
+		</dict>
+		<key>38D08DE1-1B35-432F-862A-EC443E9EF0F8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>38D08DE1-1B35-432F-862A-EC443E9EF0F8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>GroupUp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GroupUp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build GroupUp</string>
+			<key>timeStartedRecording</key>
+			<real>583063732.45504498</real>
+			<key>timeStoppedRecording</key>
+			<real>583063741.560583</real>
+			<key>title</key>
+			<string>Build GroupUp</string>
+			<key>uniqueIdentifier</key>
+			<string>38D08DE1-1B35-432F-862A-EC443E9EF0F8</string>
+		</dict>
 		<key>4755784E-11EA-472A-904E-961F77998CE3</key>
 		<dict>
 			<key>className</key>
@@ -34,6 +92,35 @@
 			<string>Build GroupUp</string>
 			<key>uniqueIdentifier</key>
 			<string>4755784E-11EA-472A-904E-961F77998CE3</string>
+		</dict>
+		<key>6D170112-49AD-4B1D-9D88-760E3135CD8E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6D170112-49AD-4B1D-9D88-760E3135CD8E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>GroupUp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GroupUp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build GroupUp</string>
+			<key>timeStartedRecording</key>
+			<real>583063557.29282606</real>
+			<key>timeStoppedRecording</key>
+			<real>583063569.40486002</real>
+			<key>title</key>
+			<string>Build GroupUp</string>
+			<key>uniqueIdentifier</key>
+			<string>6D170112-49AD-4B1D-9D88-760E3135CD8E</string>
 		</dict>
 	</dict>
 </dict>

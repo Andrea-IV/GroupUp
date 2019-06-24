@@ -24,7 +24,6 @@ depends-top-level:
 - "UILabel"
 - "UISlider"
 - "UIViewController"
-- !private "UnicodeScalarType"
 - !private "round"
 depends-member:
 - !private ["SK", "init"]

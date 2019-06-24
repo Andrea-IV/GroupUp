@@ -12,6 +12,7 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var distanceAlert: UILabel!
+    @IBOutlet weak var settingsTable: UITableView!
     
     let step: Float = 100;
     
