@@ -13,6 +13,7 @@
 		EC3E14F322A50E3B00CBB45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E14F122A50E3B00CBB45B /* Main.storyboard */; };
 		EC3E14F522A50E3E00CBB45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E14F422A50E3E00CBB45B /* Assets.xcassets */; };
 		EC3E14F822A50E3E00CBB45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E14F622A50E3E00CBB45B /* LaunchScreen.storyboard */; };
+		EC969A0A22C0CFD0004F9FC0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC969A0922C0CFD0004F9FC0 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EC3E14F422A50E3E00CBB45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3E14F722A50E3E00CBB45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3E14F922A50E3E00CBB45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC969A0922C0CFD0004F9FC0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EC3E14F422A50E3E00CBB45B /* Assets.xcassets */,
 				EC3E14F622A50E3E00CBB45B /* LaunchScreen.storyboard */,
 				EC3E14F922A50E3E00CBB45B /* Info.plist */,
+				EC969A0922C0CFD0004F9FC0 /* SettingsViewController.swift */,
 			);
 			path = GroupUp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				EC3E14F022A50E3B00CBB45B /* SecondViewController.swift in Sources */,
 				EC3E14EC22A50E3B00CBB45B /* AppDelegate.swift in Sources */,
 				EC3E14EE22A50E3B00CBB45B /* FirstViewController.swift in Sources */,
+				EC969A0A22C0CFD0004F9FC0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

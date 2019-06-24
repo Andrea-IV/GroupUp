@@ -13,19 +13,52 @@
         <!--Settings-->
         <scene sceneID="t2k-rN-MFN">
             <objects>
-                <viewController id="92K-cc-tag" sceneMemberID="viewController">
+                <viewController id="92K-cc-tag" customClass="SettingsViewController" customModule="GroupUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWA-37-d0G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance of Alert :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZn-To-8yX">
+                                <rect key="frame" x="20" y="64" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="9000" translatesAutoresizingMaskIntoConstraints="NO" id="Byo-5D-qIF">
+                                <rect key="frame" x="178" y="60" width="218" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="92K-cc-tag" eventType="valueChanged" id="AWa-N9-OJB"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-bv-Mi7">
+                                <rect key="frame" x="266" y="98" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nl6-bv-Mi7" firstAttribute="top" secondItem="Byo-5D-qIF" secondAttribute="bottom" constant="8" id="GdN-Xd-bXj"/>
+                            <constraint firstItem="KZn-To-8yX" firstAttribute="top" secondItem="4eh-gE-UnU" secondAttribute="top" constant="20" id="QTu-tX-OSG"/>
+                            <constraint firstItem="Byo-5D-qIF" firstAttribute="leading" secondItem="KZn-To-8yX" secondAttribute="trailing" constant="23" id="ZU1-bA-SLb"/>
+                            <constraint firstItem="4eh-gE-UnU" firstAttribute="trailing" secondItem="Byo-5D-qIF" secondAttribute="trailing" constant="20" id="agE-mB-Giz"/>
+                            <constraint firstItem="KZn-To-8yX" firstAttribute="leading" secondItem="4eh-gE-UnU" secondAttribute="leading" constant="20" id="bbU-EV-Bzm"/>
+                            <constraint firstItem="Byo-5D-qIF" firstAttribute="top" secondItem="4eh-gE-UnU" secondAttribute="top" constant="16" id="ilE-pZ-q7j"/>
+                            <constraint firstItem="4eh-gE-UnU" firstAttribute="trailing" secondItem="Nl6-bv-Mi7" secondAttribute="trailing" constant="106" id="qjF-ry-oRD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4eh-gE-UnU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="EG7-bW-rXX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="distanceAlert" destination="Nl6-bv-Mi7" id="lNf-T4-m4Y"/>
+                        <outlet property="slider" destination="Byo-5D-qIF" id="TgK-Ys-hz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjf-4A-NS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-1046"/>
+            <point key="canvasLocation" x="749.27536231884062" y="-1046.6517857142858"/>
         </scene>
         <!--Map-->
         <scene sceneID="hNz-n2-bh7">
