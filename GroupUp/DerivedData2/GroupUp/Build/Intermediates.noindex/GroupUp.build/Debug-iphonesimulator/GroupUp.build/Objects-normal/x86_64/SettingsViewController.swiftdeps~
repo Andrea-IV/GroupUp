@@ -7,6 +7,7 @@ provides-member:
 - ["7GroupUp22SettingsViewControllerC", ""]
 provides-dynamic-lookup:
 - "distanceAlert"
+- "settingsTable"
 - "slider"
 - "sliderChanged"
 - "viewDidLoad"
@@ -23,8 +24,8 @@ depends-top-level:
 - !private "StringLiteralType"
 - "UILabel"
 - "UISlider"
+- "UITableView"
 - "UIViewController"
-- !private "UnicodeScalarType"
 - !private "round"
 depends-member:
 - !private ["SK", "init"]
@@ -129,10 +130,12 @@ depends-member:
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UISlider"]
+- ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "distanceAlert"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "round"]
+- ["So8NSObjectC", "settingsTable"]
 - ["So8NSObjectC", "slider"]
 - ["So8NSObjectC", "sliderChanged"]
 - ["So8NSObjectC", "step"]
@@ -158,9 +161,11 @@ depends-member:
 - !private ["7GroupUp22SettingsViewControllerC", "String"]
 - ["7GroupUp22SettingsViewControllerC", "UILabel"]
 - ["7GroupUp22SettingsViewControllerC", "UISlider"]
+- ["7GroupUp22SettingsViewControllerC", "UITableView"]
 - ["7GroupUp22SettingsViewControllerC", "distanceAlert"]
 - ["7GroupUp22SettingsViewControllerC", "init"]
 - !private ["7GroupUp22SettingsViewControllerC", "round"]
+- ["7GroupUp22SettingsViewControllerC", "settingsTable"]
 - ["7GroupUp22SettingsViewControllerC", "slider"]
 - ["7GroupUp22SettingsViewControllerC", "sliderChanged"]
 - ["7GroupUp22SettingsViewControllerC", "step"]
@@ -230,10 +235,12 @@ depends-member:
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UISlider"]
+- ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "distanceAlert"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "round"]
+- ["So11UIResponderC", "settingsTable"]
 - ["So11UIResponderC", "slider"]
 - ["So11UIResponderC", "sliderChanged"]
 - ["So11UIResponderC", "step"]
@@ -285,11 +292,13 @@ depends-member:
 - !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UISlider"]
+- ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "distanceAlert"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "round"]
+- ["So16UIViewControllerC", "settingsTable"]
 - ["So16UIViewControllerC", "slider"]
 - ["So16UIViewControllerC", "sliderChanged"]
 - ["So16UIViewControllerC", "step"]
@@ -409,4 +418,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8dcd7faa824f87d9c6e69ed597537721"
+interface-hash: "4e61c844dc1bf5e52517bb2655d4ec9a"

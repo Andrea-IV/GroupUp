@@ -223,13 +223,17 @@ SWIFT_CLASS("_TtC7GroupUp21MapChatViewController")
 
 @class UISlider;
 @class UILabel;
+@class UIPickerView;
 
-SWIFT_CLASS("_TtC7GroupUp22SettingsViewController")
-@interface SettingsViewController : UIViewController
+SWIFT_CLASS("_TtC7GroupUp27SettingsTableViewController")
+@interface SettingsTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified slider;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified distanceAlert;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified timeLenght;
 - (void)viewDidLoad;
-- (IBAction)sliderChanged:(UISlider * _Nonnull)sender;
+- (IBAction)sliderValueChanged:(UISlider * _Nonnull)sender;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
