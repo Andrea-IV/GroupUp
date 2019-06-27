@@ -10,10 +10,18 @@ import UIKit
 
 class InformationTableViewController: UITableViewController {
 
-    let name = ["test", "toto"]
+
+    var users: [User] =  []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        guard let path = Bundle.main.url(forResource: "users", withExtension: "json")! else { return }
+        let path = Bundle.main.path(forResource: "users", ofType: "json")
+        let url = URL(fileURLWithPath: path as! String)
+        let data = try! Data(contentsOf: url)
+        users = try! JSONDecoder().decode([User].self, from: data)
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -27,7 +35,7 @@ class InformationTableViewController: UITableViewController {
         case 0:
             return 2
         case 1:
-            return name.count
+            return 3
         default:
             return 0
         }
@@ -45,9 +53,8 @@ class InformationTableViewController: UITableViewController {
                 cell.textView.text = "180"
             }
         } else if indexPath.section == 1 {
-        
+            print(users[indexPath.row])
         }
-        
         return cell
     }
 }
