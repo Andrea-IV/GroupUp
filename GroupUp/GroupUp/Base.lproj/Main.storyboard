@@ -314,10 +314,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="vUT-16-dqM"/><<<<<<< HEAD
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="vUT-16-dqM"/>
                         <segue destination="AcV-Pj-psN" kind="relationship" relationship="viewControllers" id="8h4-R1-4pm"/>
                         <!-- <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="jQf-lv-ce4"/> -->
-                        <!-- <segue destination="Ls2-jU-Ggn" kind="relationship" relationship="viewControllers" id="9T9-T2-QqE"/> -->
+                        <segue destination="Ls2-jU-Ggn" kind="relationship" relationship="viewControllers" id="9T9-T2-QqE"/>
 
                     </connections>
                 </tabBarController>

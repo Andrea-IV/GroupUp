@@ -24,7 +24,7 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timeLenght.dataSource = pickerData;
+        //timeLenght.dataSource = pickerData;
         /*if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             
             let fileURL = dir.appendingPathComponent(file)
