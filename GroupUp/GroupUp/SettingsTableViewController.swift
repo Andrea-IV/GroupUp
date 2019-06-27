@@ -13,72 +13,90 @@ class SettingsTableViewController: UITableViewController {
     
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var distanceAlert: UILabel!
-    @IBOutlet weak var timeLenght: UIPickerView!
+    @IBOutlet weak var selected: UILabel!
+    @IBOutlet weak var sliderTime: UISlider!
     
-    var pickerData: [String] = [String]()
     let step: Float = 100;
-    let file = "settings.txt"
-    
-    
+    let fileDistance = "distance.txt"
+    let fileTime = "time.txt"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timeLenght.dataSource = pickerData;
-        /*if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             
-            let fileURL = dir.appendingPathComponent(file)
+            let fileURL = dir.appendingPathComponent(fileTime)
             
             //reading
             do {
-                let text2 = try String(contentsOf: fileURL, encoding: .utf8)
+                let text = try String(contentsOf: fileURL, encoding: .utf8)
+                
+                let start = text.index(text.startIndex, offsetBy: 5)
+                let range = start..<text.endIndex
+                
+                sliderTime.value = Float(text[range]) ?? 1
+                selected.text = text[range] + " min";
             }
             catch {/* error handling here */}
         }else{
-            
-        }*/
-
-        distanceAlert.text = String(0) + " m";
-        for x in 0..<61 {
-            pickerData.append("\(x) min");
+            selected.text = String(1) + " min";
         }
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let fileURL = dir.appendingPathComponent(fileDistance)
+            
+            //reading
+            do {
+                let text = try String(contentsOf: fileURL, encoding: .utf8)
+                
+                let start = text.index(text.startIndex, offsetBy: 9)
+                let range = start..<text.endIndex
+                
+                slider.value = Float(text[range]) ?? 1
+                distanceAlert.text = text[range] + " m";
+            }
+            catch {/* error handling here */}
+        }else{
+            distanceAlert.text = String(0) + " m";
+        }
+        
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
-        /*let roundedValue = round(sender.value/step) * step
+        let roundedValue = round(sender.value/step) * step
         sender.value = roundedValue
         distanceAlert.text = "\(roundedValue) m";
         
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             
-            let fileURL = dir.appendingPathComponent(file)
+            let fileURL = dir.appendingPathComponent(fileDistance)
             
-            let distanceWrite = "Distance:\(String(describing: distanceAlert.text));"
+            let distanceWrite = "Distance:\(String(describing: sender.value))"
             //writing
             do {
                 try distanceWrite.write(to: fileURL, atomically: false, encoding: .utf8)
             }
             catch {/* error handling here */}
-        }*/
+        }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func sliderTimeValueChanged(_ sender: UISlider) {
+        let roundedValue = round(sender.value)
+        sender.value = roundedValue
+        selected.text = "\(sender.value) min";
+        
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let fileURL = dir.appendingPathComponent(fileTime)
+            
+            let selectedWrite = "Time:\(String(describing: sender.value))"
+            //writing
+            do {
+                try selectedWrite.write(to: fileURL, atomically: false, encoding: .utf8)
+            }
+            catch {/* error handling here */}
+        }
     }
     
-    // Number of columns of data
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-    return 1;
-    }
     
-    // The number of rows of data
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count;
-    }
-    
-    // The data to return fopr the row and component (column) that's being passed in
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row];
-    }
 }
