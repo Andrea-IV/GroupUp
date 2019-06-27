@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "username": "user1",
+        "email": "user1@user1.com",
+        "admin": 0,
+        "localized": 1
+    },
+    {
+        "id": 2,
+        "username": "user2",
+        "email": "user2@user2.com",
+        "admin": 0,
+        "localized": 0
+    },
+    {
+        "id": 3,
+        "username": "user3",
+        "email": "user3@user3.com",
+        "admin": 1,
+        "localized": 1
+    }
+]
