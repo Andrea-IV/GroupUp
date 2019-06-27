@@ -176,6 +176,7 @@
                         <outlet property="LeadingConstraint" destination="8yQ-34-hGR" id="ZdI-5N-CNo"/>
                         <outlet property="menu" destination="cdX-2e-46v" id="lQI-v1-bvk"/>
                         <outlet property="menuButton" destination="ceS-32-bac" id="Po5-f6-IFF"/>
+                        <outlet property="theMap" destination="NpL-tm-DmV" id="BQM-Xx-VUa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
