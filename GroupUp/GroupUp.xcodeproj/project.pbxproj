@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F5555F122C266D300169E23 /* GroupInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5555F022C266D300169E23 /* GroupInfoTableViewCell.swift */; };
 		0F801E2F22C50BCA006FF3B9 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F801E2E22C50BC9006FF3B9 /* users.json */; };
+		0F801E3122C510A9006FF3B9 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F801E3022C510A9006FF3B9 /* UserTableViewCell.swift */; };
 		EC3E14EC22A50E3B00CBB45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14EB22A50E3B00CBB45B /* AppDelegate.swift */; };
 		EC3E14EE22A50E3B00CBB45B /* MapChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14ED22A50E3B00CBB45B /* MapChatViewController.swift */; };
 		EC3E14F022A50E3B00CBB45B /* InformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E14EF22A50E3B00CBB45B /* InformationTableViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		0F5555F022C266D300169E23 /* GroupInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoTableViewCell.swift; sourceTree = "<group>"; };
 		0F801E2E22C50BC9006FF3B9 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		0F801E3022C510A9006FF3B9 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		EC3E14E822A50E3B00CBB45B /* GroupUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E14EB22A50E3B00CBB45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3E14ED22A50E3B00CBB45B /* MapChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChatViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				EC3E14ED22A50E3B00CBB45B /* MapChatViewController.swift */,
 				EC3E14EF22A50E3B00CBB45B /* InformationTableViewController.swift */,
 				EC3E14F122A50E3B00CBB45B /* Main.storyboard */,
+				0F801E3022C510A9006FF3B9 /* UserTableViewCell.swift */,
 				0F5555F022C266D300169E23 /* GroupInfoTableViewCell.swift */,
 				EC3E14F422A50E3E00CBB45B /* Assets.xcassets */,
 				EC3E14F622A50E3E00CBB45B /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				EC6884D222C2572C00F992B7 /* SettingsTableViewController.swift in Sources */,
 				EC3E14EC22A50E3B00CBB45B /* AppDelegate.swift in Sources */,
 				0F5555F122C266D300169E23 /* GroupInfoTableViewCell.swift in Sources */,
+				0F801E3122C510A9006FF3B9 /* UserTableViewCell.swift in Sources */,
 				EC3E14EE22A50E3B00CBB45B /* MapChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

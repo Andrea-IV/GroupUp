@@ -18,7 +18,7 @@ class InformationTableViewController: UITableViewController {
         
 //        guard let path = Bundle.main.url(forResource: "users", withExtension: "json")! else { return }
         let path = Bundle.main.path(forResource: "users", ofType: "json")
-        let url = URL(fileURLWithPath: path as! String)
+        let url = URL(fileURLWithPath: path as! String!)
         let data = try! Data(contentsOf: url)
         users = try! JSONDecoder().decode([User].self, from: data)
         
@@ -35,7 +35,7 @@ class InformationTableViewController: UITableViewController {
         case 0:
             return 2
         case 1:
-            return 3
+            return users.count
         default:
             return 0
         }
@@ -43,18 +43,25 @@ class InformationTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell : GroupInfoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! GroupInfoTableViewCell
+        var cell : UITableViewCell = UITableViewCell()
         
         if indexPath.section  == 0 {
+            let temp : GroupInfoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! GroupInfoTableViewCell
             if indexPath.row == 0 {
-                cell.textView.text = "Group 1"
+                temp.textView.text = "Group 1"
             } else if indexPath.row == 1 {
-                cell.label.text = "Location duration (min)"
-                cell.textView.text = "180"
+                temp.label.text = "Location duration (min)"
+                temp.textView.text = "180"
             }
+            cell = temp
         } else if indexPath.section == 1 {
-            print(users[indexPath.row])
+            let temp : UserTableViewCell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! UserTableViewCell
+            
+            temp.username.text = users[indexPath.row].username
+            temp.email.text = users[indexPath.row].email
+            cell = temp
         }
+        
         return cell
     }
 }

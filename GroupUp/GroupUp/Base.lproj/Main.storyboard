@@ -254,7 +254,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="infoCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" id="Q2B-7r-uea" customClass="GroupInfoTableViewCell" customModule="GroupUp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" id="Q2B-7r-uea" customClass="GroupInfoTableViewCell" customModule="GroupUp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="99.333333333333343" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q2B-7r-uea" id="fhx-3Q-Lfg">
@@ -283,12 +283,47 @@
                                         <constraint firstAttribute="bottom" secondItem="KgA-Hf-mFG" secondAttribute="bottom" constant="2" id="Qgs-RB-H8F"/>
                                         <constraint firstAttribute="trailing" secondItem="KgA-Hf-mFG" secondAttribute="trailing" constant="20" id="WSQ-ce-6jl"/>
                                         <constraint firstItem="KgA-Hf-mFG" firstAttribute="top" secondItem="fhx-3Q-Lfg" secondAttribute="top" constant="2" id="e5p-bk-DQo"/>
-                                        <constraint firstItem="Gza-hu-uBf" firstAttribute="leading" secondItem="fhx-3Q-Lfg" secondAttribute="leadingMargin" constant="30" id="f64-Ie-QJz"/>
+                                        <constraint firstItem="Gza-hu-uBf" firstAttribute="leading" secondItem="fhx-3Q-Lfg" secondAttribute="leading" constant="50" id="tIM-iN-w3r"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="Gza-hu-uBf" id="mlE-F8-U22"/>
                                     <outlet property="textView" destination="KgA-Hf-mFG" id="CY4-jr-5YT"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="100" id="BWe-yu-f77" customClass="UserTableViewCell" customModule="GroupUp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="143.33333333333334" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWe-yu-f77" id="Xpg-Mc-Cck">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxa-79-2UI">
+                                            <rect key="frame" x="50" y="11" width="83" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pR-dd-RQZ">
+                                            <rect key="frame" x="173" y="13" width="200" height="15.666666666666664"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="1qJ-LS-gxE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qxa-79-2UI" firstAttribute="leading" secondItem="Xpg-Mc-Cck" secondAttribute="leadingMargin" constant="30" id="EQw-3M-tTd"/>
+                                        <constraint firstItem="7pR-dd-RQZ" firstAttribute="top" secondItem="Xpg-Mc-Cck" secondAttribute="topMargin" constant="2" id="QCt-A2-THE"/>
+                                        <constraint firstItem="qxa-79-2UI" firstAttribute="top" secondItem="Xpg-Mc-Cck" secondAttribute="topMargin" id="ezr-wi-bJb"/>
+                                        <constraint firstItem="7pR-dd-RQZ" firstAttribute="leading" secondItem="qxa-79-2UI" secondAttribute="trailing" constant="40" id="nlZ-pu-PgQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="email" destination="7pR-dd-RQZ" id="wuK-5b-iNp"/>
+                                    <outlet property="username" destination="qxa-79-2UI" id="jol-7E-6Rb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -316,9 +351,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="vUT-16-dqM"/>
                         <segue destination="AcV-Pj-psN" kind="relationship" relationship="viewControllers" id="8h4-R1-4pm"/>
-                        <!-- <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="jQf-lv-ce4"/> -->
                         <segue destination="Ls2-jU-Ggn" kind="relationship" relationship="viewControllers" id="9T9-T2-QqE"/>
-
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
