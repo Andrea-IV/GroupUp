@@ -163,6 +163,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import CoreLocation;
+@import MapKit;
 @import UIKit;
 #endif
 
@@ -208,12 +210,14 @@ SWIFT_CLASS("_TtC7GroupUp25InformationViewController")
 
 @class NSLayoutConstraint;
 @class UIView;
+@class MKMapView;
 @class UIButton;
 
 SWIFT_CLASS("_TtC7GroupUp21MapChatViewController")
-@interface MapChatViewController : UIViewController
+@interface MapChatViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified leadingConstraint;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified menu;
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified theMap;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified menuButton;
 - (void)viewDidLoad;
 - (IBAction)openMenu:(id _Nonnull)sender;
@@ -223,16 +227,16 @@ SWIFT_CLASS("_TtC7GroupUp21MapChatViewController")
 
 @class UISlider;
 @class UILabel;
-@class UIPickerView;
 
 SWIFT_CLASS("_TtC7GroupUp27SettingsTableViewController")
 @interface SettingsTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified slider;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified distanceAlert;
-@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified timeLenght;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified selected;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sliderTime;
 - (void)viewDidLoad;
 - (IBAction)sliderValueChanged:(UISlider * _Nonnull)sender;
-- (void)didReceiveMemoryWarning;
+- (IBAction)sliderTimeValueChanged:(UISlider * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
