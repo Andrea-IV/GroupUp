@@ -23,7 +23,9 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+
             
             let fileURL = dir.appendingPathComponent(fileTime)
             
@@ -97,6 +99,4 @@ class SettingsTableViewController: UITableViewController {
             catch {/* error handling here */}
         }
     }
-    
-    
 }

@@ -137,11 +137,58 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-2e-46v">
-                                <rect key="frame" x="-150" y="44" width="150" height="769"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="On5-kb-E21"/>
-                                </constraints>
+                                <rect key="frame" x="-200" y="44" width="200" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel Groups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-6r-7PW">
+                                        <rect key="frame" x="8" y="8" width="184" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16537807642487046" green="0.16537807642487046" blue="0.16537807642487046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.73927299222797926" green="0.73927299222797926" blue="0.73927299222797926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qtr-T1-ZC6">
+                                        <rect key="frame" x="8" y="79" width="184" height="597"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="travelCell" id="i8O-dw-OBh" customClass="TravelGroup" customModule="GroupUp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="184" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i8O-dw-OBh" id="In0-YU-5yw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-JT-Unm">
+                                                            <rect key="frame" x="10" y="1" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4me-ev-e1T">
+                                                            <rect key="frame" x="58" y="11" width="60" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="TravelImage" destination="FQE-JT-Unm" id="vOg-XY-HTS"/>
+                                                    <outlet property="TravelLabel" destination="4me-ev-e1T" id="VQt-QB-QER"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEs-fd-Spm">
+                                        <rect key="frame" x="8" y="684" width="184" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16537807639999999" green="0.16537807639999999" blue="0.16537807639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Create Travel Group">
+                                            <color key="titleColor" red="0.73927299219999998" green="0.73927299219999998" blue="0.73927299219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.092960654145077704" green="0.092960654145077704" blue="0.092960654145077704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceS-32-bac">
                                 <rect key="frame" x="0.0" y="753" width="44" height="40"/>
@@ -157,15 +204,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="2un-z4-mTR"/>
+                            <constraint firstItem="cdX-2e-46v" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="-200" id="5Lc-WC-OcH"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="5Vj-QL-UzQ"/>
                             <constraint firstItem="cdX-2e-46v" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="5qF-eE-MSQ"/>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="-150" id="8yQ-34-hGR"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="A4H-pL-qdi"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ceS-32-bac" secondAttribute="bottom" constant="20" id="DZz-LR-Ef8"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="HM1-uc-Qr1"/>
-                            <constraint firstItem="cdX-2e-46v" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Lj8-w4-0El"/>
-                            <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="NnP-gx-xxg"/>
-                            <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="SUx-iM-cZq"/>
-                            <constraint firstItem="NpL-tm-DmV" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="fXO-Xx-yMJ"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="YEr-dd-Tra"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="YPa-zL-aEb"/>
+                            <constraint firstAttribute="bottom" secondItem="cdX-2e-46v" secondAttribute="bottom" id="eNb-5Q-uYM"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="fOR-6N-voM"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="gmd-Ba-IaV"/>
+                            <constraint firstItem="ceS-32-bac" firstAttribute="leading" secondItem="cdX-2e-46v" secondAttribute="trailing" id="iXY-Wh-aeK"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="nAD-iS-yyi"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="pZE-qJ-ACB"/>
+                            <constraint firstItem="NpL-tm-DmV" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="w0Z-Ht-oAb"/>
                             <constraint firstItem="NpL-tm-DmV" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="xTG-bc-u8p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -173,10 +227,11 @@
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="gQo-4m-unT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="LeadingConstraint" destination="8yQ-34-hGR" id="ZdI-5N-CNo"/>
+                        <outlet property="leadingConstraint" destination="5Lc-WC-OcH" id="Qso-NL-M6I"/>
                         <outlet property="menu" destination="cdX-2e-46v" id="lQI-v1-bvk"/>
                         <outlet property="menuButton" destination="ceS-32-bac" id="Po5-f6-IFF"/>
                         <outlet property="theMap" destination="NpL-tm-DmV" id="BQM-Xx-VUa"/>
+                        <outlet property="travelGroupTable" destination="qtr-T1-ZC6" id="5qX-NW-2je"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "745f9caa59632bc104ed4e755a2027d8"
+build_time: [1561643373, 481978000]
+inputs:
+  "/Users/etudiant/Desktop/good_grup/GroupUp/GroupUp/GroupUp/InformationViewController.swift": [1561643270, 0]
+  "/Users/etudiant/Desktop/good_grup/GroupUp/GroupUp/GroupUp/SettingsTableViewController.swift": !dirty [1561643270, 0]
+  "/Users/etudiant/Desktop/good_grup/GroupUp/GroupUp/GroupUp/AppDelegate.swift": [1561643269, 0]
+  "/Users/etudiant/Desktop/good_grup/GroupUp/GroupUp/GroupUp/MapChatViewController.swift": [1561643270, 0]
